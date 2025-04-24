@@ -1,0 +1,132 @@
+/* style.css */
+body {
+    margin: 0;
+    background: linear-gradient(to top, #242123, #492B36, #6E3549);
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  #game {
+    margin-top: 20px;
+  }
+  
+  canvas {
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    background: pink;
+    color: #333;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: rgb(250, 111, 134);
+  }
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  #message {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  #popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 10px #000;
+    max-width: 300px;
+  }
+  
+  #popup.hidden {
+    display: none;
+  }
+  
+  #playAgain {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    background: #6c63ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #playAgain:hover {
+    background: #574fd6;
+  }
+
+  .game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #letterPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 11; /* above regular popup */
+  }
+  
+  #letterPopup.hidden {
+    display: none;
+  }
+  
+  #readLetter {
+    background-color: pink;
+  }
+
+  #readLetter:hover {
+    background-color: rgb(250, 111, 134);
+  }
+
+  #closeLetter {
+    background-color: pink;
+  }
+
+  #closeLetter:hover {
+    background-color: rgb(250, 111, 134);
+  }

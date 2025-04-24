@@ -1,0 +1,43 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hook the Moon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game">
+    <h1>🎣 Hook the Moon</h1>
+    
+    <div class="game-area">
+      <canvas id="gameCanvas" width="400" height="600"></canvas>
+      <button id="throwButton">Throw Hook</button>
+    </div>
+  
+    <div id="popup" class="hidden">
+      <div class="popup-content">
+        <h2>You hooked the moon! 🌙💖</h2>
+        <p>The moon contains a letter...</p>
+        <button id="readLetter">Read Letter</button>
+        <button id="playAgain">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="letterPopup" class="hidden">
+    <div class="popup-content">
+      <h2>To My Dearest Love 💌</h2>
+      <p id="letterMessage">
+        <!-- Your message goes here -->
+        From the moment I met you, I knew I’d do anything to make you smile—even hook the moon if I had to. Happy Monthsary, mahal. 🌙❤️
+      </p>
+      <button id="closeLetter">Close</button>
+    </div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
