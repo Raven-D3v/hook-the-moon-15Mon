@@ -59,12 +59,15 @@ body {
   
   .popup-content {
     background: white;
-    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 10px;
     text-align: center;
     color: black;
     box-shadow: 0 0 10px #000;
-    max-width: 300px;
+    max-width: 1000px;
   }
   
   #popup.hidden {
@@ -114,7 +117,26 @@ body {
   #letterPopup.hidden {
     display: none;
   }
+
+  #letterMessage {
+    text-align: center;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-top: -20px;
+  }
   
+  #letterContent {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+    box-shadow: 0 0 10px #000;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+  }
+
   #readLetter {
     background-color: pink;
   }
